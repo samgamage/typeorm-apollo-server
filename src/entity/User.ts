@@ -16,9 +16,11 @@ export class User extends BaseEntity {
   @PrimaryColumn("uuid")
   id: string;
 
+  // email can only be length 255 characters
   @Column("varchar", { length: 255 })
   email: string;
 
+  // password can be any length
   @Column("text")
   password: string;
 

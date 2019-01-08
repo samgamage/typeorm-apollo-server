@@ -13,7 +13,7 @@ import { resolvers } from "./resolvers";
 const typeDefs = importSchema(path.join(__dirname, "./schema.graphql"));
 
 const options: IOptions = {
-  port: 8000,
+  port: 8090,
 };
 
 const server = new GraphQLServer({ typeDefs, resolvers });
